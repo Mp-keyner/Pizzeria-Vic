@@ -6,21 +6,25 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    text-align: center;
 }
 
 .title {
     font-size: 18px;
     font-weight: bold;
-    color: #e65422;
+    color: #f8ac47;
 }
 
 .price {
+    margin: 8px 0;
     font-size: 18px;
     font-weight: bold;
-    color: #666;
+    color: #fff;
+    text-align: start;
+    padding-left: 2pc;
 }
 
 .desc {
     text-align: center;
-    color: #777;
+    color: #fff;
 }

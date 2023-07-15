@@ -78,3 +78,22 @@
     width: 20px;
     color: #e65422;
 }
+
+@media (max-width:480px) {
+    .item ul li {
+        display: none;
+    }
+
+    .item:nth-child(1) {
+        flex: 3;
+    }
+
+    .vic {
+        display: block;
+    }
+
+    .callButton {
+        display: none;
+    }
+
+}
