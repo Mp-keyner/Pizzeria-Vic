@@ -1,99 +1,98 @@
 .container {
-    height: 100px;
-    padding: 0px 50px;
-    background-color: #e65422;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
+  height: 100px;
+  padding: 0px 50px;
+  background-color: #e65422;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  scroll-behavior: smooth;
 }
 
 .item {
-    flex: 1;
-    display: flex;
-    align-items: center;
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
 }
-
+/* 
 .item:nth-child(2) {
     flex: 3;
-}
+} */
 
 .item:last-child {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .callButton {
-    background-color: white;
-    border-radius: 50%;
-    padding: 10px;
-    width: 50px;
-    height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
 }
 
 .texts {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .text:first-child {
-    font-size: 12px;
-    font-weight: 500;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .text:last-child {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .list {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    list-style: none;
-    color: white;
-
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: white;
 }
 
 .listItem {
-    margin: 20px;
-    font-weight: 50;
+  margin: 20px;
+  font-weight: 50;
 }
 
 .cart {
-    position: relative;
+  position: relative;
 }
 
 .counter {
-    position: absolute;
-    top: -9px;
-    right: -6px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    padding: 3px;
-    background: white;
-    height: 20px;
-    width: 20px;
-    color: #e65422;
+  position: absolute;
+  top: -9px;
+  right: -6px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 3px;
+  background: white;
+  height: 20px;
+  width: 20px;
+  color: #e65422;
 }
 
-@media (max-width:480px) {
-    .item ul li {
-        display: none;
-    }
+@media (max-width: 480px) {
+  .item ul li {
+    display: none;
+  }
 
-    .item:nth-child(1) {
-        flex: 3;
-    }
+  .item:nth-child(1) {
+    flex: 3;
+  }
 
-    .vic {
-        display: block;
-    }
+  .vic {
+    display: block;
+  }
 
-    .callButton {
-        display: none;
-    }
-
+  .callButton {
+    display: none;
+  }
 }

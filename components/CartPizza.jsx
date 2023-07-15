@@ -1,19 +1,20 @@
-import Image from 'next/image'
-import styles from '../styles/CartPizza.module.css'
+import Image from "next/image";
+import styles from "../styles/CartPizza.module.css";
+import Link from "next/link";
 
-const CartPizza = () => {
-    return (
-        <div className={styles.container}>
-            <a href="http://localhost:3000/product/213">
-                <Image src="/img/pizza-cart.png" alt='' width='400' height='300' />
-                <h1 className={styles.title}>FIORI DI ZUCCA</h1>
-                <div className={styles.price}>
-                    <span>$19.90</span>
-                </div>
-                <p className={styles.desc}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit dolorum velit nesciunt quaerat doloremque doloribus numquam nesciunt adipisci.</p>
-            </a>
+const CartPizza = ({ src, title, descrip, price, id }) => {
+  return (
+    <div className={styles.container}>
+      <Link href={`http://localhost:3000/product/${id}`}>
+        <Image src={src} alt="" width="300" height="300" />
+        <h1 className={styles.title}>{title}</h1>
+        <div className={styles.price}>
+          <span>{price}</span>
         </div>
-    )
-}
+        <p className={styles.desc}>{descrip}</p>
+      </Link>
+    </div>
+  );
+};
 
-export default CartPizza
+export default CartPizza;
